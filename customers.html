@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Hub</title>
+    <link rel="icon" href="images/car14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+</head>
+<body class="all">
+    <!-- NAVBAR -->
+    <nav class="container-div navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CAR-HUB</a>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+        </div>
+
+        <form class="search-div light">
+            <input class="search-input me-2" type="text" placeholder="Search">
+            <span>
+                <img src="images/search.svg" alt="">
+            </span>
+        </form>
+
+        <div class="notification">
+            <img id="moon" src="images/moon.svg" alt="moon" style="width:30px;">
+            <img id="sun" src="images/sun.svg" alt="sun" style="width:30px;">
+            <img src="images/bell.svg" alt="Notification Logo" style="width:30px;">
+        </div>
+
+        <div class="dropdown dropstart">
+            <a class="navbar-brand" data-bs-toggle="dropdown" href="#">
+                <img src="images/car14.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile/html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main container-div light">
+    <!-- LEFT SIDE -->
+        <aside class="left-menu">
+            <div class="menu-links">
+                <a href="index.html" class="a-link">
+                <img src="images/home.svg" alt="home">
+                <span class="link-name">Home</span>
+            </a>
+
+            <a href="explore.html" class="a-link">
+                <img src="images/compass.svg" alt="Explore">
+                <span class="link-name">Explore</span>
+            </a>
+
+            <a href="categories.html" class="a-link">
+                <img src="images/activity.svg" alt="Categories">
+                <span class="link-name">Categories</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/heart.svg" alt="Favourite">
+                <span class="link-name">Favourite</span>
+            </a>
+
+            <a href="customers.html" class="a-link active-link">
+                <img src="images/users.svg" alt="user">
+                <span class="link-name">Users</span>
+            </a>
+            
+            <a href="#" class="a-link" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <img src="images/settings.svg" alt="Settings">
+                <span class="link-name">Settings</span>
+            </a>
+            </div>
+            
+        </aside>
+        <!-- LEFT SIDE -->
+
+        <!-- RIGHT SIDE -->
+        <section class="content light"> 
+            <div class="table-responsive card">
+                <div class="container mt-3">
+                    <h2>Customers</h2>
+                    <p>A list of our customers</p>            
+                    <table class="table table-striped table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Fullname</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Address</th>
+                                <th style="text-align: end;">
+                                    <span class="fa fa-cog"></span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@gmail.com</td>
+                            <td>123-4567-890</td>
+                            <td>Male</td>
+                            <td>12, Park way Lekki</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mary Ajah</td>
+                            <td>mary@example.com</td>
+                            <td>123-4567-890</td>
+                            <td>Female</td>
+                            <td>30, Nushin road</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@gmail.com</td>
+                            <td>123-4567-890</td>
+                            <td>Male</td>
+                            <td>12, Park way Lekki</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mary Ajah</td>
+                            <td>mary@example.com</td>
+                            <td>123-4567-890</td>
+                            <td>Female</td>
+                            <td>30, Nushin road</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@gmail.com</td>
+                            <td>123-4567-890</td>
+                            <td>Male</td>
+                            <td>12, Park way Lekki</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mary Ajah</td>
+                            <td>mary@example.com</td>
+                            <td>123-4567-890</td>
+                            <td>Female</td>
+                            <td>30, Nushin road</td>
+                            <td>
+                                <div class="btn-icons">
+                                    <span class="fa fa-pen"></span>
+                                    <span class="fa fa-trash"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                    </div>
+            </div>
+        </section>
+        <!-- RIGHT SIDE -->
+    </div>
+    
+    <!-- MAIN CONTENT -->
+
+
+
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+</body>
+</html>

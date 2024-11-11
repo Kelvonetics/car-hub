@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Hub</title>
+    <link rel="icon" href="images/car14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+</head>
+<body class="all">
+    <!-- NAVBAR -->
+    <nav class="container-div navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CAR-HUB</a>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+        </div>
+
+        <form class="search-div light">
+            <input class="search-input me-2" type="text" placeholder="Search">
+            <span>
+                <img src="images/search.svg" alt="">
+            </span>
+        </form>
+
+        <div class="notification">
+            <img id="moon" src="images/moon.svg" alt="moon" style="width:30px;">
+            <img id="sun" src="images/sun.svg" alt="sun" style="width:30px;">
+            <img src="images/bell.svg" alt="Notification Logo" style="width:30px;">
+        </div>
+
+        <div class="dropdown dropstart">
+            <a class="navbar-brand" data-bs-toggle="dropdown" href="#">
+                <img src="images/car14.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile/html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main container-div light">
+    <!-- LEFT SIDE -->
+        <aside class="left-menu">
+            <div class="menu-links">
+                <a href="index.html" class="a-link">
+                <img src="images/home.svg" alt="home">
+                <span class="link-name">Home</span>
+            </a>
+
+            <a href="explore.html" class="a-link active-link">
+                <img src="images/compass.svg" alt="Explore">
+                <span class="link-name">Explore</span>
+            </a>
+
+            <a href="categories.html" class="a-link">
+                <img src="images/activity.svg" alt="Categories">
+                <span class="link-name">Categories</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/heart.svg" alt="Favourite">
+                <span class="link-name">Favourite</span>
+            </a>
+
+            <a href="customers.html" class="a-link">
+                <img src="images/users.svg" alt="user">
+                <span class="link-name">Users</span>
+            </a>
+            
+            <a href="#" class="a-link" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <img src="images/settings.svg" alt="Settings">
+                <span class="link-name">Settings</span>
+            </a>
+            </div>
+            
+        </aside>
+        <!-- LEFT SIDE -->
+
+        <!-- RIGHT SIDE -->
+        <section class="content light"> 
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/car11.jpg" alt="Benz" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Benz</h3>
+                        <p>Benz are luxury cars for all classes!</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/car14.jpg" alt="BMW" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>BMW</h3>
+                        <p>BMW made for the ladies!</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/car9.jpg" alt="Ferrari" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Ferrari</h3>
+                        <p>Ferrari super sport cars for speed!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/car2.jpg" alt="Toyota" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Toyota</h3>
+                        <p>Toyota executive cars!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/car7.jpg" alt="Honda" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Honda</h3>
+                        <p>Honda special cars!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+        </section>
+        <!-- RIGHT SIDE -->
+    </div>
+    
+    <!-- MAIN CONTENT -->
+
+
+
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+</body>
+</html>

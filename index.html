@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Hub</title>
+    <link rel="icon" href="images/car14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+</head>
+<body class="all">
+    <!-- NAVBAR -->
+    <nav class="container-div navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CAR-HUB</a>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+        </div>
+
+        <form class="search-div light">
+            <input class="search-input me-2" type="text" placeholder="Search">
+            <span>
+                <img src="images/search.svg" alt="">
+            </span>
+        </form>
+
+        <div class="notification">
+            <img id="moon" src="images/moon.svg" alt="moon" style="width:30px;">
+            <img id="sun" src="images/sun.svg" alt="sun" style="width:30px;">
+            <img src="images/bell.svg" alt="Notification Logo" style="width:30px;">
+        </div>
+
+        <div class="dropdown dropstart">
+            <a class="navbar-brand" data-bs-toggle="dropdown" href="#">
+                <img src="images/car14.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile/html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main container-div light">
+    <!-- LEFT SIDE -->
+        <aside class="left-menu">
+            <div class="menu-links">
+                <a href="index.html" class="a-link active-link">
+                <img src="images/home.svg" alt="home">
+                <span class="link-name">Home</span>
+            </a>
+
+            <a href="explore.html" class="a-link">
+                <img src="images/compass.svg" alt="Explore">
+                <span class="link-name">Explore</span>
+            </a>
+
+            <a href="categories.html" class="a-link">
+                <img src="images/activity.svg" alt="Categories">
+                <span class="link-name">Categories</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/heart.svg" alt="Favourite">
+                <span class="link-name">Favourite</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/users.svg" alt="user">
+                <span class="link-name">Users</span>
+            </a>
+            
+            <a href="#" class="a-link" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <img src="images/settings.svg" alt="Settings">
+                <span class="link-name">Settings</span>
+            </a>
+            </div>
+            
+        </aside>
+        <!-- LEFT SIDE -->
+
+        <!-- RIGHT SIDE -->
+        <section class="content light">
+            <div class="hero mt-0 p-3 rounded">
+                <div class="hero-text">
+                    <h1>Car Hub</h1>
+                    <p style="font-size: 18px;">
+                        your ultimate destination for all things automotive! Explore a vast selection of new and used cars, expert reviews, and the latest industry news ...</p>
+                </div>
+                
+                <div class="bg-hero">
+                    <img src="images/hero-bg.png" alt="" width="500">
+                    <img src="images/hero.png" alt="" width="400" class="bg-hero-img">
+                </div>
+            </div>
+
+            <!-- CAR GRID -->
+            <div class="row mt-4 light">
+                <div class="col-lg-4 col-md-6" id="cardiv_1">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_1"> Mercedez 450 </div>
+                        <span class="in-stock"> 10</span>
+
+                        <img id="img_1" src="images/car4.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_1"> $35,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" id="cardiv_2">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_2"> Honda CRV </div>
+                        <span class="in-stock"> 5</span>
+
+                        <img id="img_2" src="images/car5.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_2"> $29,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm"  >Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" id="cardiv_3">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_3"> Toyota Venza </div>
+                        <span class="in-stock"> 2</span>
+
+                        <img id="img_3" src="images/car10.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_3"> $45,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" id="cardiv_4">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_4"> BMW 5 Series </div>
+                        <span class="in-stock"> 7</span>
+
+                        <img id="img_4" src="images/car12.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_4"> $40,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm"  >Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" id="cardiv_5">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_5"> Ferarri </div>
+                        <span class="in-stock"> 1</span>
+
+                        <img id="img_5" src="images/car1.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_5"> $55,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm"  >Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" id="cardiv_6">
+                    <div class="car-div" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="car-name" id="name_6"> Volvo 740 </div>
+                        <span class="in-stock"> 4</span>
+
+                        <img id="img_6" src="images/car15.jpg" alt="">
+                        <div class="car-info">
+                            <div class="car-price" id="price_6"> $22,000.00 </div>
+                            <div class="buy-btn">
+                                <button class="btn btn-dark btn-sm"  >Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAR GRID -->
+        </section>
+        <!-- RIGHT SIDE -->
+    </div>
+    
+    <!-- MAIN CONTENT -->
+
+
+
+    <!-- MODAL -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Car Details</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="detail-title">
+                    <img id="modalImg" src="" alt="">
+                    <div class="detail-right">
+                        <h2 id="modalCarName"></h2>
+                        <p id="modalCarPrice"></p>
+                        <p>Year: 2019</p>
+                        <p>Mileage: 12,000 km</p>
+                        <p>Color: Blue</p>
+                    </div>
+                </div>
+                <div class="detail-info">
+                    The Mercedes-Benz GLC 350 combines luxury and performance, offering a spacious interior, advanced technology, and a smooth ride. Its stylish design and powerful engine make it a standout in the midsize SUV market. Perfect for both city driving and adventurous road trips!?
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="purchase-btn p-2">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Purchase</button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+</body>
+</html>
